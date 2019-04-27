@@ -15,21 +15,12 @@
     Col
   } from "reactstrap";
    import { Link } from 'react-router-dom';
-   import "../Library.css"
- class Library extends Component {
 
-     componentDidMount() {
-       document.body.classList.toggle("landing-page");
-     }
-     componentWillUnmount() {
-       document.body.classList.toggle("landing-page");
-     }
+ class Library extends Component {
    constructor(props) {
      super(props);
       this.state = { albums: albumData };
-
    }
-
    render() {
 
       return (
@@ -69,29 +60,28 @@
               />
 
               <div className="content-center">
-              <Row className="row-grid justify-content-between align-items-center text-center">
+                <Row className="row-grid justify-content-between align-items-center text-left">
 
 
 
-              {
-           this.state.albums.map( (album, index) =>
-
-              <Link to={`/album/${album.slug}`} key={index}>
-
-               <img className=" img-fluid rounded shadow-lg" src={album.albumCover} alt={album.title} />
-               <div>{album.title}</div>
-               <div>{album.artist}</div>
-               <div>{album.songs.length} songs</div>
-              </Link>
-
-           )
-         }
+                {
+             this.state.albums.map( (album, index) =>
+                <Link to={`/album/${album.slug}`} key={index}>
+                 {album.title}
+                 <img src={album.albumCover} alt={album.title} />
+                 <div>{album.title}</div>
+                 <div>{album.artist}</div>
+                 <div>{album.songs.length} songs</div>
+                </Link>
+             )
+           }
 
 
 
-              </Row>
+                </Row>
               </div>
             </div>
+
 
 
 
@@ -99,6 +89,6 @@
         </>
       );
     }
-  }
+    }
 
 export default Library;

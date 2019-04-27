@@ -17,10 +17,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "./Navbars/ExamplesNavbar.jsx";
-import Footer from "./Footer/Footer.jsx";
 
-import bigChartData from "../variables/charts.jsx";
 
 class Landing extends React.Component {
   componentDidMount() {
@@ -91,7 +88,6 @@ class Landing extends React.Component {
               </Row>
             </div>
           </div>
-
 
 
 
