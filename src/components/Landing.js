@@ -32,7 +32,7 @@ class Landing extends React.Component {
   render() {
     return (
       <>
-        <ExamplesNavbar />
+
         <div className="wrapper">
           <div className="page-header">
             <img

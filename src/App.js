@@ -41,11 +41,11 @@ class App extends Component {
                     <Container>
                         <Row>
                             <Col>
-                        
+
 
                                 <Route exact path="/" component={Landing} />
                                 <Route path="/library" component={Library} />
-                                  <Route path="/album" component={Album} />
+                                  <Route path="/album/:slug" component={Album} />
 
                             </Col>
                         </Row>
