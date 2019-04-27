@@ -13,7 +13,12 @@ import {
     Jumbotron,
     Button
 } from 'reactstrap';
-
+import { Route, Link } from 'react-router-dom';
+import Landing from './components/Landing';
+import Library from './components/Library';
+import Album from './components/Album';
+import ExamplesNavbar from "./components/Navbars/ExamplesNavbar.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 class App extends Component {
     constructor(props) {
         super(props);
@@ -31,40 +36,23 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Navbar color="inverse" light expand="md">
-                    <NavbarBrand href="/">reactstrap</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
-              
+                  <ExamplesNavbar />
+  <div className="wrapper">
                     <Container>
                         <Row>
                             <Col>
-                                <h1>Welcome to React</h1>
-                                <p>
-                                    <Button
-                                        tag="a"
-                                        color="success"
-                                        size="large"
-                                        href="http://reactstrap.github.io"
-                                        target="_blank"
-                                    >
-                                        View Reactstrap Docs
-                                    </Button>
-                                </p>
+                        
+
+                                <Route exact path="/" component={Landing} />
+                                <Route path="/library" component={Library} />
+                                  <Route path="/album" component={Album} />
+
                             </Col>
                         </Row>
                     </Container>
+                    </div>
 
+                            <Footer />
             </div>
         );
     }
