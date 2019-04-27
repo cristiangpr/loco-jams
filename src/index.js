@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
+import "./assets/css/blk-design-system-react.css";
+import "./assets/css/nucleo-icons.css";
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
