@@ -3,17 +3,7 @@ import React from "react";
 import '../Landing.css'
 // reactstrap components
 import {
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  CardTitle,
-  ListGroupItem,
-  ListGroup,
-  Container,
-  Row,
-  Col
+Row
 } from "reactstrap";
 
 // core components

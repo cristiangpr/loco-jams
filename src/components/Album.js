@@ -2,20 +2,8 @@ import React, { Component } from 'react';
 import albumData from './../data/albums';
  import PlayerBar from './PlayerBar';
 import "../Album.css";
-import {
-  Button,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  CardTitle,
-  ListGroupItem,
-  ListGroup,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
-   import { Link } from 'react-router-dom';
+
+  
 
 class Album extends Component {
   constructor(props) {

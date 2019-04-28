@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
 import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
+
     Container,
     Row,
     Col,
-    Jumbotron,
+
 
 } from 'reactstrap';
 import { Route, Link } from 'react-router-dom';
