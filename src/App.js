@@ -11,7 +11,7 @@ import {
     Row,
     Col,
     Jumbotron,
-    Button
+
 } from 'reactstrap';
 import { Route, Link } from 'react-router-dom';
 import Landing from './components/Landing';
@@ -19,7 +19,14 @@ import Library from './components/Library';
 import Album from './components/Album';
 import ExamplesNavbar from "./components/Navbars/ExamplesNavbar.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+
 class App extends Component {
+  componentDidMount() {
+    document.body.classList.toggle("landing-page");
+  }
+  componentWillUnmount() {
+    document.body.classList.toggle("landing-page");
+  }
     constructor(props) {
         super(props);
 
@@ -35,22 +42,46 @@ class App extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="wrapper">
                   <ExamplesNavbar />
-  <div className="wrapper">
-                    <Container>
-                        <Row>
-                            <Col>
 
 
-                                <Route exact path="/" component={Landing} />
-                                <Route path="/library" component={Library} />
-                                  <Route path="/album/:slug" component={Album} />
+            <div className="page-header">
+              <img
+                alt="..."
+                className="path"
+                src={require("./assets/img/blob.png")}
+              />
+              <img
+                alt="..."
+                className="path2"
+                src={require("./assets/img/path2.png")}
+              />
 
-                            </Col>
-                        </Row>
-                    </Container>
-                    </div>
+
+
+
+              <img
+                alt="..."
+                className="shapes circle"
+                src={require("./assets/img/cercuri.png")}
+              />
+              <Container>
+
+                  <Row>
+                      <Col>
+
+
+                          <Route exact path="/" component={Landing} />
+                          <Route path="/library" component={Library} />
+                            <Route path="/album/:slug" component={Album} />
+
+                      </Col>
+                  </Row>
+              </Container>
+              </div>
+
+
 
                             <Footer />
             </div>

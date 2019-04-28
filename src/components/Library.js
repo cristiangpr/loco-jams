@@ -18,12 +18,6 @@
    import "../Library.css"
  class Library extends Component {
 
-     componentDidMount() {
-       document.body.classList.toggle("landing-page");
-     }
-     componentWillUnmount() {
-       document.body.classList.toggle("landing-page");
-     }
    constructor(props) {
      super(props);
       this.state = { albums: albumData };
@@ -37,36 +31,7 @@
 
           <div className="wrapper">
             <div className="page-header">
-              <img
-                alt="..."
-                className="path"
-                src={require("../assets/img/blob.png")}
-              />
-              <img
-                alt="..."
-                className="path2"
-                src={require("../assets/img/path2.png")}
-              />
-              <img
-                alt="..."
-                className="shapes triangle"
-                src={require("../assets/img/triunghiuri.png")}
-              />
-              <img
-                alt="..."
-                className="shapes wave"
-                src={require("../assets/img/waves.png")}
-              />
-              <img
-                alt="..."
-                className="shapes squares"
-                src={require("../assets/img/patrat.png")}
-              />
-              <img
-                alt="..."
-                className="shapes circle"
-                src={require("../assets/img/cercuri.png")}
-              />
+              
 
               <div className="content-center">
               <Row className="row-grid justify-content-between align-items-center text-center">

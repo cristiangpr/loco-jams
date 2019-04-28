@@ -1,16 +1,17 @@
 #space{
-  height: 480px;
+  height: 400px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 300px;
   vertical-align: middle;
 
 }
 
 #selling-points{
+  padding-top: 800px;
     text-align: center;
 }
 
 .hero-title{
-  
+ color: #e14eca;
   padding-top: 20px
 }

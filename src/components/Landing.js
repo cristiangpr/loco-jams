@@ -20,55 +20,22 @@ import {
 
 
 class Landing extends React.Component {
-  componentDidMount() {
-    document.body.classList.toggle("landing-page");
-  }
-  componentWillUnmount() {
-    document.body.classList.toggle("landing-page");
-  }
+
+
   render() {
     return (
       <>
 
-        <div className="wrapper">
-          <div className="page-header">
-            <img
-              alt="..."
-              className="path"
-              src={require("../assets/img/blob.png")}
-            />
-            <img
-              alt="..."
-              className="path2"
-              src={require("../assets/img/path2.png")}
-            />
-            <img
-              alt="..."
-              className="shapes triangle"
-              src={require("../assets/img/triunghiuri.png")}
-            />
-            <img
-              alt="..."
-              className="shapes wave"
-              src={require("../assets/img/waves.png")}
-            />
-            <img
-              alt="..."
-              className="shapes squares"
-              src={require("../assets/img/patrat.png")}
-            />
-            <img
-              alt="..."
-              className="shapes circle"
-              src={require("../assets/img/cercuri.png")}
-            />
+
+            <div className="col-md-12" id="space"> <h1 className="hero-title"><span> LOCO•JAMS</span> </h1></div>
 
             <div className="content-center">
+
               <Row className="row-grid justify-content-between align-items-center text-left">
 
               <section className="container" id="landing">
 
-            <div className="col-md-12" id="space">  <Button className="btn btn-primary"  href="/library"> <h1 className="hero-title">Turn the music up!</h1></Button></div>
+
               <section className="row" id="selling-points">
                 <div className="col" id="column-1">
                   <h2 className="point-title">Choose your music</h2>
@@ -87,11 +54,11 @@ class Landing extends React.Component {
               </section>
               </Row>
             </div>
-          </div>
 
 
 
-        </div>
+
+
       </>
     );
   }

@@ -1,0 +1,27 @@
+.album{
+  text-align: center;
+  padding-top: 200px;
+
+
+}
+#album-cover-art{
+  height: auto;
+     width: auto;
+     max-width: 300px;
+     max-height: 300px;
+}
+#song-list{
+margin-left: auto;
+margin-right: auto;
+
+
+}
+.album-details {
+
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+#buttons{
+
+}
